@@ -9,29 +9,20 @@
 			templateUrl: "app/directives/userInfoCard/userInfoCard.html",
 			restrict: "E",
 			controllerAs: 'vm',
-			controller: function () {
-				var vm = this;
+			scope: {
+				user: '='
+			},
+			bindToController: true,
+			controller: controller
+		};
 
-				vm.knightMe = knightMe;
+		function controller() {
+			var vm = this;
 
-				vm.user = {
-					name: 'Luke Skywalker',
-					address: {
-						street: 'PO Box 123',
-						city: 'Secret Rebel Base',
-						planet: 'Yavin 4'
-					},
-					friends: [
-					'Han',
-					'Leia',
-					'Chewbacca'
-					]
-				};
+			vm.knightMe = knightMe;
 
-				function knightMe(user) {
-
-					user.rank = "knight";
-				}
+			function knightMe() {
+				vm.user.rank = "knight";
 			}
 		}
 	}

@@ -10,7 +10,7 @@
 			{{vm.user.address.street}}<br/>
 			{{vm.user.address.city}}<br/>
 			{{vm.user.address.planet}}
-		</div><br/>
+		</div>
 
 		<div>
 			<h4>Friends</h4>
@@ -24,9 +24,7 @@
 			<div>{{vm.user.rank}}</div>
 		</div>
 		
-		<p>&nbsp;</p>
-
-		<button ng-show="!vm.user.rank" class="btn btn-default" ng-click="vm.knightMe(vm.user)">Knight me</button>
+		<button ng-show="!vm.user.rank" class="btn btn-default" ng-click="vm.knightMe()">Knight me</button>
 
 	</div>
 	
