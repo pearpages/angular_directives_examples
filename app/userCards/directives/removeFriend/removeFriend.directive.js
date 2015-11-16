@@ -10,7 +10,7 @@
 				notifyParent : '&method',
 			},
 			restrict: 'E',
-			templateUrl: 'app/directives/userInfoCard/removeFriend/removeFriend.html',
+			templateUrl: 'app/userCards/directives/removeFriend/removeFriend.html',
 			controller: controller,
 			controllerAs: 'vm',
 			bindToController: true

@@ -10,7 +10,7 @@
 				user : '='
 			},
 			restrict: 'E',
-			templateUrl: 'app/directives/userInfoCard/address/address.html',
+			templateUrl: 'app/userCards/directives/address/address.html',
 			controller: controller,
 			controllerAs: 'vm',
 			bindToController: true

@@ -6,7 +6,7 @@
 
 	function myAppUserInfoCard() {
 		return {
-			templateUrl: "app/directives/userInfoCard/userInfoCard.html",
+			templateUrl: "app/userCards/directives/userInfoCard.html",
 			restrict: "E",
 			controllerAs: 'vm',
 			scope: {
