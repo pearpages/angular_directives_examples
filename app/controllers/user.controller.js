@@ -2,9 +2,9 @@
 	"use strict"
 
 	angular.module('app')
-	.controller('mainController',[mainController]);
+	.controller('UserController',[UserController]);
 
-	function mainController() {
+	function UserController() {
 		
 		var vm = this;
 

@@ -2,24 +2,38 @@
 	<head>
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
 		<script src="app/app.js"></script>
 
 		<!-- controllers -->
-		<script src="app/controllers/main.controller.js"></script>
+		<script src="app/controllers/user.controller.js"></script>
+		<script src="app/controllers/video.controller.js"></script>
 
 		<!-- directives -->
 		<script src="app/directives/userInfoCard/userInfoCard.directive.js"></script>
 		<script src="app/directives/userInfoCard/address/address.directive.js"></script>
 		<script src="app/directives/userInfoCard/removeFriend/removeFriend.directive.js"></script>
+		<script src="app/directives/video/spacebarSupport/spacebarSupport.directive.js"></script>
+		<script src="app/directives/video/eventPause/eventPause.directive.js"></script>
 
 		<style>
 			body{padding-top: 20px;}
 		</style>
 	</head>
-	<body ng-app = "app" class="container" ng-controller="mainController as vm">
-		
-		<x-my-app-user-info-card user="vm.user1" init="true"></x-my-app-user-info-card>
-		<x-my-app-user-info-card user="vm.user2"></x-my-app-user-info-card>
+	<body ng-app = "app" class="container" >
+
+		<div ng-controller="UserController as vm">
+			<x-my-app-user-info-card user="vm.user1" init="true"></x-my-app-user-info-card>
+			<x-my-app-user-info-card user="vm.user2"></x-my-app-user-info-card>
+		</div>
+
+		<div ng-controller="VideoController as vm">
+			<video spacebar-support event-pause="vm.handlePause(evt)" id="vid" controls preload="none" poster="assets/poster.png">
+				<source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4"></source>
+				<source src="http://media.w3.org/2010/05/sintel/trailer.webm5" type="video/webm"></source>
+				<source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg"></source>
+			</video>
+		</div>
 
 	</body>
 </html>
