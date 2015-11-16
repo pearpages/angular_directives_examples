@@ -6,8 +6,12 @@
 
 		<!-- controllers -->
 		<script src="app/controllers/main.controller.js"></script>
+
+		<!-- directives -->
+		<script src="app/directives/userInfoCard/userInfoCard.directive.js"></script>
 	</head>
 	<body ng-app = "app" ng-controller="mainController as vm">
-		hello world!
+		
+		<x-my-app-user-info-card></x-my-app-user-info-card>
 	</body>
 </html>
