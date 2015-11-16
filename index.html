@@ -23,9 +23,7 @@
 	</head>
 	<body ng-app = "app" class="container" >
 
-		<span class="btn-group" style="margin-bottom:20px;">
-			<span ui-sref-active="active" ui-sref="home" class="btn btn-default"><span class="glyphicon glyphicon-home"></span>&nbsp;</span><span ui-sref-active="active" ui-sref="user-cards" class="btn btn-default">UserCards Example</span><span ui-sref-active="active" ui-sref="video" class="btn btn-default">Video Example</span>	
-		</span>
+		<x-ng-include src="'app/common/menu.html'"></x-ng-include>
 		
 		<x-ui-view></x-ui-view>
 
