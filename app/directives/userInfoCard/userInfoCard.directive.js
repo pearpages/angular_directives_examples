@@ -19,7 +19,13 @@
 		function controller() {
 			var vm = this;
 
+			vm.collapsed = false;
 			vm.knightMe = knightMe;
+			vm.collapse = collapse;
+
+			function collapse() {
+				vm.collapsed = !vm.collapsed;
+			}
 
 			function knightMe() {
 				vm.user.rank = "knight";
