@@ -1,5 +1,9 @@
 # Directives
 
+## Tips
+
++ Use kind of "namespace" prefix
+
 ## Types of Directives
 
 + Components (Widget)

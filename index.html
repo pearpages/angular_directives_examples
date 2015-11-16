@@ -9,8 +9,12 @@
 
 		<!-- directives -->
 		<script src="app/directives/userInfoCard/userInfoCard.directive.js"></script>
+
+		<style>
+			body{padding-top: 20px;}
+		</style>
 	</head>
-	<body ng-app = "app" ng-controller="mainController as vm">
+	<body ng-app = "app" class="container" ng-controller="mainController as vm">
 		
 		<x-my-app-user-info-card></x-my-app-user-info-card>
 	</body>

@@ -1,14 +1,33 @@
-Name: {{vm.user.name}} <br/><br/>
+<div class="panel panel-primary">
 
-<div ng-show="!!vm.user.address">Address: <br/>
-{{vm.user.address.street}}<br/>
-{{vm.user.address.city}}<br/>
-{{vm.user.address.planet}}
-</div><br/>
+	<div class="panel-heading">
+		{{vm.user.name}}
+	</div>
 
-<div>Friends:
-	<ul>
-	<li ng-repeat="friend in vm.user.friends">{{friend}}</li>
+	<div class="panel-body">
+		<div ng-show="!!vm.user.address">
+			<h4>Address</h4>
+			{{vm.user.address.street}}<br/>
+			{{vm.user.address.city}}<br/>
+			{{vm.user.address.planet}}
+		</div><br/>
+
+		<div>
+			<h4>Friends</h4>
+			<ul>
+				<li ng-repeat="friend in vm.user.friends">{{friend}}</li>
+			</ul>
+		</div>
+
+		<div ng-show="!!vm.user.rank">
+			<h4>Rank</h4>
+			<div>{{vm.user.rank}}</div>
+		</div>
 		
-	</ul>
+		<p>&nbsp;</p>
+
+		<button ng-show="!vm.user.rank" class="btn btn-default" ng-click="vm.knightMe(vm.user)">Knight me</button>
+
+	</div>
+	
 </div>
