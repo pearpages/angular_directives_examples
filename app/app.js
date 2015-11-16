@@ -21,6 +21,12 @@
 			controller: "VideoController",
 			controllerAs: 'vm'
 		})
+		.state('watch', {
+			url: "/watch",
+			templateUrl: "app/watch/watch.html",
+			controller: "WatchController",
+			controllerAs: 'vm'
+		})
 		.state('home', {
 			url: "/",
 			templateUrl: "app/home/home.html"
