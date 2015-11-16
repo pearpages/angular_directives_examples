@@ -14,3 +14,4 @@
 
 + = (input/output)
 + @ (only input)
++ & (for the methods)

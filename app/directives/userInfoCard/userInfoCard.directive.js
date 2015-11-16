@@ -23,7 +23,8 @@
 			vm.collapsedState = (vm.collapsed === 'true');
 			vm.knightMe = knightMe;
 			vm.collapse = collapse;
-
+			vm.removeFriend = removeFriend;
+			
 			function collapse() {
 				vm.collapsedState = !vm.collapsedState;
 			}
@@ -31,6 +32,15 @@
 			function knightMe() {
 				vm.user.rank = "knight";
 			}
+
+			function removeFriend(friend) {
+				var idx = vm.user.friends.indexOf(friend);
+
+				if(idx > -1){
+					vm.user.friends.splice(idx,1);
+				}
+			}
+
 		}
 	}
 })();

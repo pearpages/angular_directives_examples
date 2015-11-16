@@ -11,7 +11,9 @@
 		<div>
 			<h4>Friends</h4>
 			<ul>
-				<li ng-repeat="friend in vm.user.friends">{{friend}}</li>
+				<li ng-repeat="friend in vm.user.friends">{{friend}}
+				<x-my-app-remove-friend user="vm.user" method="vm.removeFriend(friend)"></x-my-app-remove-friend>
+				</li>
 			</ul>
 		</div>
 
