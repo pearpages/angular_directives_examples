@@ -2,6 +2,23 @@
 
 This page has been rendered with **angular-md** [https://github.com/yaru22/angular-md](https://github.com/yaru22/angular-md)
 
+## Tips
+
+Using "namespace" for components e.g.:
+
+```javascript
+(function (){
+	'use strict'
+
+	angular.module('myApp')
+	.directive('myAppHighlighter',myAppHighlighter);
+
+	function myAppHighlighter() {
+		//code
+	}
+})();
+```
+
 ## Types of Directives
 
 + Components (Widget)
@@ -13,3 +30,4 @@ This page has been rendered with **angular-md** [https://github.com/yaru22/angul
 + = (input/output)
 + @ (only input)
 + & (for methods)
+

@@ -19,6 +19,7 @@
     "angular": "~1.4.7",
     "bootstrap": "~3.3.5",
     "angular-ui-router": "ui-router#~0.2.15",
-    "angular-md": "~1.0.0"
+    "angular-md": "~1.0.0",
+    "highlightjs": "~8.9.1"
   }
 }
