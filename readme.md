@@ -1,8 +1,6 @@
 # Directives
 
-## Tips
-
-+ Use kind of "namespace" prefix
+This page has been rendered with **angular-md** [https://github.com/yaru22/angular-md](https://github.com/yaru22/angular-md)
 
 ## Types of Directives
 
@@ -14,4 +12,4 @@
 
 + = (input/output)
 + @ (only input)
-+ & (for the methods)
++ & (for methods)

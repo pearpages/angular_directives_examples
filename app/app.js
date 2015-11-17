@@ -1,7 +1,7 @@
 (function() {
 	"use strict"
 
-	angular.module("app",['ui.router'])
+	angular.module("app",['ui.router','yaru22.md'])
 	.config(function($stateProvider,$urlRouterProvider){
 
 		// For any unmatched url, redirect to /state1
