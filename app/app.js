@@ -27,6 +27,12 @@
 			controller: "WatchController",
 			controllerAs: 'vm'
 		})
+		.state('my-click', {
+			url: "/my-click",
+			templateUrl: "app/myClick/my-click.html",
+			controller: "MyClickController",
+			controllerAs: 'vm'
+		})
 		.state('home', {
 			url: "/",
 			templateUrl: "app/home/home.html"
