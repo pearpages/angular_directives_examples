@@ -33,6 +33,12 @@
 			controller: "MyClickController",
 			controllerAs: 'vm'
 		})
+		.state('font-scale', {
+			url: "/font-scale",
+			templateUrl: "app/fontScale/font-scale.html",
+			controller: "FontScaleController",
+			controllerAs: 'vm'
+		})
 		.state('home', {
 			url: "/",
 			templateUrl: "app/home/home.html"
