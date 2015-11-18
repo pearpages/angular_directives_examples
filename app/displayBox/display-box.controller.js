@@ -5,6 +5,6 @@
 	.controller('DisplayBoxController',DisplayBoxController);
 
 	function DisplayBoxController() {
-		alert('displaybox');
+		
 	}
 })();
