@@ -10,18 +10,12 @@
 		};
 
 		function link(scope,el,attrs) {
+			var linkVar = attrs['stateDisplay']
+			var colors = attrs['sateDisplayColors'].split(' ');
+
 			scope.$watch(attrs['stateDisplay'],function (newVal,oldVAl) {
-				switch(newVal){
-				case 0:
-				el.css('background-color','white');
-				break;
-				case 1:
-				el.css('background-color','yellow');
-				break;
-				case 2:
-				el.css('background-color','red');
-				break;
-			}
+				el.css('background-color',colors[newVal]);
+				
 			});
 		}
 	}
