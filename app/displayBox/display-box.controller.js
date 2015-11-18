@@ -5,6 +5,9 @@
 	.controller('DisplayBoxController',DisplayBoxController);
 
 	function DisplayBoxController() {
-		
+		var vm = this;
+
+		vm.message = 'This is a message from the controller';
+
 	}
 })();
