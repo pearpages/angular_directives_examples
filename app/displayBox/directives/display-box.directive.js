@@ -12,19 +12,18 @@
 			scope:{
 				mycolor: '@'
 			},
-			controllerAs: 'vmd',
+			controllerAs: 'vm',
 			bindToController: true,
 			transclude:true,
 		};
 
 		function controller() {
-			// I use vmd and not vm.. because the transcluded text gets rendered here and they collision
-			var vmd = this;
-			vmd.hidden = false;
-			vmd.close = close;
+			var vm = this;
+			vm.hidden = false;
+			vm.close = close;
 
 			function close() {
-				vmd.hidden = true;
+				vm.hidden = true;
 			}
 
 		}

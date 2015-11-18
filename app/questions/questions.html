@@ -1,0 +1,19 @@
+<h1>Questions</h1>
+Controller text:{{vm.answer}}
+<x-my-app-questions question-text="How are you?">
+		<label>Transcluded input </label><input class="form-control" type="text" ng-model="vm.answer">
+		<button class="btn btn-default" ng-click="vm.submit()">Submit</button>
+		<button class="btn btn-primary" ng-click="vm.test()">Test</button>
+</x-my-app-questions>
+
+<h2>Other Questions</h2>
+
+<x-my-app-questions question-text="Are you my brother">
+	<input type="radio" ng-value="true" ng-model="vm.brother"> Yes
+	<input type="radio" ng-value="false" ng-model="vm.brother"> No
+</x-my-app-questions>
+
+<x-my-app-questions question-text="Are these the droids I'm looking for?">
+	<button class="btn btn-primary btn-lg">No</button>
+	<button class="btn btn-primary btn-xs">Yes</button>
+</x-my-app-questions>

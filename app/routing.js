@@ -45,6 +45,12 @@
 			controller: 'DisplayBoxController',
 			controllerAs: 'vm'
 		})
+		.state('questions', {
+			url: "/questions",
+			templateUrl: "app/questions/questions.html",
+			controller: 'QuestionsController',
+			controllerAs: 'vm'
+		})
 		.state('home', {
 			url: "/",
 			templateUrl: "app/home/home.html"
