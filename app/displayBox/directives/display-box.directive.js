@@ -18,6 +18,7 @@
 		};
 
 		function controller() {
+			// I use vmd and not vm.. because the transcluded text gets rendered here and they collision
 			var vmd = this;
 			vmd.hidden = false;
 			vmd.close = close;
