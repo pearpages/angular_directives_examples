@@ -8,6 +8,7 @@
 		var vm = this;
 
 		vm.droid1;
+		vm.hello = hello;
 		
 		activate();
 
@@ -23,6 +24,9 @@
 			};		
 		}
 
+		function hello() {
+			alert('hello');
+		}
 
 	}
 })();
