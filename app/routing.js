@@ -51,6 +51,12 @@
 			controller: 'QuestionsController',
 			controllerAs: 'vm'
 		})
+		.state('droid', {
+			url: "/droid",
+			templateUrl: "app/droid/droid.html",
+			controller: 'DroidController',
+			controllerAs: 'vm'
+		})
 		.state('home', {
 			url: "/",
 			templateUrl: "app/home/home.html"
