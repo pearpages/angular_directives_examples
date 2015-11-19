@@ -6,7 +6,7 @@
 
 	function myAppDroid() {
 		return {
-			templateUrl: "app/droid/directives/droid.html",
+			templateUrl: "app/droid/directives/droid/droid.html",
 			restrict: "E",
 			controllerAs: 'vm',
 			scope: {

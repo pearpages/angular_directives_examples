@@ -1,0 +1,9 @@
+<div class="panel panel-primary">
+	<div class="panel-heading" ng-click="vmd.collapse()" style="overflow:hidden;">
+		{{vmd.title}} <button class="btn btn-default" ng-click="vmd.myAction($event)" style="float:right;">Next State</button>
+	</div>
+
+	<div class="panel-body" ng-transclude ng-hide="vmd.collapsed" >
+		
+	</div>
+</div>

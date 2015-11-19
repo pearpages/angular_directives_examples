@@ -1,11 +1,4 @@
-<div class="panel panel-primary">
-
-	<div class="panel-heading" ng-click="vm.collapse()">
-		{{vm.droid.name}}
-	</div>
-
-	<div class="panel-body" ng-hide="vm.collapsedState">
-		
+<x-my-app-panel title="{{vm.droid.name}}" my-method="vm.nextState()">
 		<h4>Specifications</h4>
 
 		<ul>
@@ -19,6 +12,4 @@
 
 		<button ng-click="vm.nextState()" class="btn btn-default">Next State</button>
 
-	</div>
-	
-</div>
+</x-my-app-panel>
