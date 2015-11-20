@@ -2,9 +2,9 @@
 	'use strict';
 
 	angular.module("app")
-	.directive('userList',[userList]);
+	.directive('userList',['$compile',userList]);
 
-	function userList() {
+	function userList($compile) {
 		return {
 				restrict: 'A',
 				link: link,
@@ -32,8 +32,15 @@
 					var childScope = scope.$new();
 					childScope[itemString] = collection[i];
 					transclude(childScope, function(clone) {
-						var wrapper = angular.element('<div class="well" />');
-						wrapper.append(clone);
+						var template = $compile('<div class="panel panel-primary">'+
+							'<div class="panel-heading">'+
+								'{{'+itemString+'.name}}'+
+							'</div>'+
+							'<div class="panel-body"></div>'+
+						'</div>');
+						var wrapper = template(childScope);
+						//find just works limited by tag name
+						wrapper.find("div").eq(1).append(clone);
 
 						el.after(wrapper);
 						var item = {};
