@@ -69,6 +69,12 @@
 			controller: 'MyRepeatController',
 			controllerAs: 'vm'
 		})
+		.state('user-list', {
+			url: "/user-list",
+			templateUrl: "app/userList/user-list.html",
+			controller: 'UserListController',
+			controllerAs: 'vm'
+		})
 		.state('home', {
 			url: "/",
 			templateUrl: "app/home/home.html"
