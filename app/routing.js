@@ -63,6 +63,12 @@
 			controller: 'LazyRenderController',
 			controllerAs: 'vm'
 		})
+		.state('my-repeat', {
+			url: "/my-repeat",
+			templateUrl: "app/myRepeat/my-repeat.html",
+			controller: 'MyRepeatController',
+			controllerAs: 'vm'
+		})
 		.state('home', {
 			url: "/",
 			templateUrl: "app/home/home.html"

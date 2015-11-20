@@ -1,0 +1,11 @@
+<div class="container">
+	<h2>Bounty Hunters</h2>
+	<div class="well well-lg">
+		<div my-repeat="hunter in vm.bountyHunters">
+			<span>Name: {{hunter.name}}</span>			
+		</div>
+		<hr>
+		<button class="btn btn-default"	ng-click="vm.add()">Add</button>
+		<button class="btn btn-default"	ng-click="vm.remove()">Remove</button>
+	</div>
+</div>
