@@ -57,10 +57,10 @@
 			controller: 'DroidController',
 			controllerAs: 'vm'
 		})
-		.state('adv-trans', {
-			url: "/adv-trans",
-			templateUrl: "app/advTrans/adv-trans.html",
-			controller: 'AdvTransController',
+		.state('lazy-render', {
+			url: "/lazy-render",
+			templateUrl: "app/lazyRender/lazy-render.html",
+			controller: 'LazyRenderController',
 			controllerAs: 'vm'
 		})
 		.state('home', {
