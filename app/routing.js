@@ -57,6 +57,12 @@
 			controller: 'DroidController',
 			controllerAs: 'vm'
 		})
+		.state('adv-trans', {
+			url: "/adv-trans",
+			templateUrl: "app/advTrans/adv-trans.html",
+			controller: 'AdvTransController',
+			controllerAs: 'vm'
+		})
 		.state('home', {
 			url: "/",
 			templateUrl: "app/home/home.html"
