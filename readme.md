@@ -31,3 +31,12 @@ Using "namespace" for components e.g.:
 + @ (only input)
 + & (for methods)
 
+## Structural Directives
+
+e.g. *ng-if*
+
+## Gulp
+
+```bash
+npm install gulp --save-dev
+```
