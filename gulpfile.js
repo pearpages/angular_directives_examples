@@ -20,7 +20,7 @@
         return gulp
             .src('index.html')
             .pipe(wiredep(options))
-            //.pipe($.inject(gulp.src(js)))
+            .pipe($.inject(gulp.src(js)))
             .pipe(gulp.dest('./'));
     });
 }());

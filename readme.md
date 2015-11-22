@@ -1,5 +1,9 @@
 # Directives
 
+## Installation
+
+For using the gulp html injection, there are two bower_modules that need to have changed the *bower.json* file and have added "main" field.
+
 This page has been rendered with **angular-md** [https://github.com/yaru22/angular-md](https://github.com/yaru22/angular-md)
 
 ## Tips
