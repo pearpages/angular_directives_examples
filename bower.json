@@ -19,7 +19,9 @@
     "angular": "~1.4.7",
     "bootstrap": "~3.3.5",
     "angular-ui-router": "ui-router#~0.2.15",
+    "marked": "~0.3.5",
+    "highlightjs": "~8.9.1",
     "angular-md": "~1.0.0",
-    "highlightjs": "~8.9.1"
+    "angular-mocks": "~1.4.8"
   }
 }
