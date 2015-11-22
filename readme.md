@@ -38,5 +38,5 @@ e.g. *ng-if*
 ## Gulp
 
 ```bash
-npm install gulp --save-dev
+npm install gulp yargs gulp-load-plugins gulp-inject wiredep --save-dev
 ```
