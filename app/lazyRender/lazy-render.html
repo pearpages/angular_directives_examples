@@ -1,0 +1,19 @@
+<h2>Lazy Rendering (Advanced Transclusion)</h2>
+
+<h3>Lazy Render</h3>
+
+<ul my-lazy-render="showit">
+	<li ng-repeat="item in vm.items">
+		{{item}}
+	</li>
+</ul my-lazy-render>
+
+<button class="btn btn-default" ng-click="showit = true">Render Content</button>
+
+<h3>Without Lazy Render</h3>
+
+<ul>
+	<li ng-repeat="item in vm.items">
+		{{item}}
+	</li>
+</ul>

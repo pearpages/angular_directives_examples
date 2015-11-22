@@ -57,6 +57,24 @@
 			controller: 'DroidController',
 			controllerAs: 'vm'
 		})
+		.state('lazy-render', {
+			url: "/lazy-render",
+			templateUrl: "app/lazyRender/lazy-render.html",
+			controller: 'LazyRenderController',
+			controllerAs: 'vm'
+		})
+		.state('my-repeat', {
+			url: "/my-repeat",
+			templateUrl: "app/myRepeat/my-repeat.html",
+			controller: 'MyRepeatController',
+			controllerAs: 'vm'
+		})
+		.state('user-list', {
+			url: "/user-list",
+			templateUrl: "app/userList/user-list.html",
+			controller: 'UserListController',
+			controllerAs: 'vm'
+		})
 		.state('home', {
 			url: "/",
 			templateUrl: "app/home/home.html"
